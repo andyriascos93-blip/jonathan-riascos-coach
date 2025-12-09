@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jonathan Riascos - Coaching de Propósito y Bienestar</title>
+    <!-- Carga de Tailwind CSS para un diseño moderno y responsive -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Definición de la fuente y colores base */
+        :root {
+            --primary-color: #1e3a8a; /* Azul Marino (Confianza, Profesionalismo) */
+            --accent-color: #3b82f6; /* Azul Royal (Claridad, Visión) */
+            --bg-calm: #eff6ff; /* Fondo Azul muy claro */
+        }
+        body {
+            font-family: 'Inter', sans-serif;
+            scroll-behavior: smooth;
+            background-color: #ffffff;
+        }
+        /* Estilo para los botones principales */
+        .btn-primary {
+            background-color: var(--primary-color);
+            color: white;
+            transition: background-color 0.3s, transform 0.2s, box-shadow 0.3s;
+            box-shadow: 0 4px 0 0 #1e40af; /* Sombra sutil para un efecto 3D */
+        }
+        .btn-primary:hover {
+            background-color: #1e40af;
+            transform: translateY(-1px);
+            box-shadow: 0 5px 0 0 #1e3a8a;
+        }
+        /* Estilo para el fondo de la hero section */
+        #hero {
+            background-color: var(--bg-calm);
+            background-image: linear-gradient(180deg, var(--bg-calm) 0%, #ffffff 100%);
+        }
+        /* Iconos para tarjetas */
+        .icon-svg {
+            stroke: var(--accent-color);
+        }
+
+        /* Clase para estilizar la imagen de perfil */
+        .profile-img-style {
+            /* Asegura que la imagen de perfil ocupe el espacio */
+            width: 100%;
+            height: auto; 
+            /* Filtros sutiles para integrar con el tema azul y blanco */
+            filter: grayscale(10%) contrast(100%);
+            transition: filter 0.5s;
+        }
+        .profile-img-style:hover {
+             filter: grayscale(0%) contrast(105%); /* Color completo al pasar el ratón */
+        }
+    </style>
+</head>
+<body class="text-gray-800">
+
+    <!-- CABECERA Y NAVEGACIÓN (HEADER) -->
+    <header class="sticky top-0 z-50 bg-white shadow-lg">
+        <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
+            <!-- Título: Claridad -->
+            <a href="#hero" class="text-3xl font-extrabold text-blue-800">
+                Claridad
+            </a>
+            <!-- Botón de Contacto Rápido -->
+            <a href="#contacto" class="btn-primary px-5 py-2 rounded-xl font-semibold text-sm uppercase tracking-wider">
+                Comienza tu Transformación
+            </a>
+        </nav>
+    </header>
+
+    <!-- SECCIÓN HERO/INTRODUCCIÓN -->
+    <section id="hero" class="pt-24 pb-32 sm:pt-40 sm:pb-56 text-center">
+        <div class="max-w-5xl mx-auto px-6">
+            <p class="text-xl font-semibold text-blue-600 mb-3 uppercase tracking-widest">Jonathan Andrés Riascos - Coach de Bienestar</p>
+            <!-- Título Principal -->
+            <h1 class="text-5xl sm:text-7xl font-extrabold mb-6 leading-tight text-gray-900">
+                Reescribe tu <strong>Forma de Pensar</strong>. <br> Redefine tu <strong>Forma de Vivir</strong>.
+            </h1>
+            <!-- Subtítulo / Propuesta de Valor -->
+            <p class="text-xl sm:text-2xl text-gray-600 mb-10 max-w-3xl mx-auto">
+                Implementa una metodología de coaching basada en la psicología para construir una vida de <strong>claridad, propósito y bienestar sostenido</strong>. El enfoque es el cambio interno.
+            </p>
+            
+            <!-- Llamada a la Acción (CTA) -->
+            <a href="#servicios" class="btn-primary px-12 py-4 text-xl rounded-xl shadow-2xl inline-block uppercase font-extrabold">
+                Descubre tu Potencial
+            </a>
+        </div>
+    </section>
+
+    <!-- SECCIÓN DE ENFOQUE (CON IMAGEN DE PERFIL) -->
+    <section id="enfoque" class="py-16 sm:py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8">
+            <h2 class="text-3xl sm:text-4xl font-bold text-center mb-16 text-gray-900">Tu Perfil Mejorado: Claridad y Estructura Mental</h2>
+            
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                
+                <!-- COLUMNA DE IMAGEN DE PERFIL (AQUÍ VA TU FOTO) -->
+                <div class="rounded-2xl overflow-hidden shadow-2xl border-4 border-blue-200">
+                    <!-- REEMPLAZA ESTA URL CON TU ENLACE DIRECTO -->
+                    <img src="https://placehold.co/800x600/bfdbfe/1e3a8a?text=URL+DE+TU+FOTO+AQUI" 
+                         alt="[Foto de Jonathan Riascos - Coach de Bienestar y Mentalidad]" 
+                         class="profile-img-style"
+                         onerror="this.onerror=null; this.src='https://placehold.co/800x600/bfdbfe/1e3a8a?text=URL+DE+TU+FOTO+AQUI';">
+                </div>
+                
+                <!-- Columna de Texto -->
+                <div>
+                    <h3 class="text-2xl font-semibold text-blue-700 mb-4">El Fundamento es tu Mentalidad. Lo demás, es consecuencia.</h3>
+                    <p class="mb-4 text-lg text-gray-600">
+                        Como futuro psicólogo, mi enfoque va más allá de darte tareas. Trabajamos en la <strong>raíz de tus desafíos</strong>, comprendiendo tus patrones de comportamiento para generar cambios permanentes. Si tu forma de pensar es sólida, tu vida lo será.
+                    </p>
+                    <ul class="list-disc pl-5 text-lg text-gray-600 space-y-2">
+                        <li>Identifica creencias que limitan tu crecimiento personal.</li>
+                        <li>Desarrolla <strong>resiliencia</strong> ante el estrés y la incertidumbre.</li>
+                        <li>Establece hábitos que te acerquen a tu <strong>propósito vital</strong>.</li>
+                    </ul>
+                    <a href="#contacto" class="mt-6 inline-block text-blue-600 font-medium hover:text-blue-800 transition duration-300">
+                        Agenda una conversación gratuita <span aria-hidden="true">&rarr;</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCIÓN DE SERVICIOS (PILAR DEL BIENESTAR) -->
+    <section id="servicios" class="py-16 sm:py-24 bg-gray-100">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8">
+            <h2 class="text-3xl sm:text-4xl font-bold text-center mb-16 text-gray-900">Mis Pilares de Coaching</h2>
+            
+            <!-- Grid de Servicios de Coaching -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                
+                <!-- Tarjeta 1: Pensar (Claridad) -->
+                <div class="bg-white p-8 rounded-2xl shadow-xl hover:shadow-2xl transition duration-300 border-t-4 border-blue-600">
+                    <svg class="icon-svg w-10 h-10 mb-4 text-blue-500" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                    </svg>
+                    <h3 class="text-xl font-bold mb-3 text-blue-800">1. Reestructuración Cognitiva</h3>
+                    <p class="text-gray-600">
+                        Trabajamos en <strong>mejorar tu forma de pensar</strong>, eliminando el diálogo interno destructivo y construyendo una perspectiva orientada a soluciones y bienestar.
+                    </p>
+                </div>
+
+                <!-- Tarjeta 2: Sentir (Bienestar) -->
+                <div class="bg-white p-8 rounded-2xl shadow-xl hover:shadow-2xl transition duration-300 border-t-4 border-blue-600">
+                    <svg class="icon-svg w-10 h-10 mb-4 text-blue-500" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7z"></path>
+                    </svg>
+                    <h3 class="text-xl font-bold mb-3 text-blue-800">2. Gestión Emocional</h3>
+                    <p class="text-gray-600">
+                        Aprenderás a manejar el <strong>estrés y la ansiedad</strong> con herramientas prácticas, mejorando tu capacidad de respuesta y logrando una mayor paz mental.
+                    </p>
+                </div>
+
+                <!-- Tarjeta 3: Actuar (Vivir) -->
+                <div class="bg-white p-8 rounded-2xl shadow-xl hover:shadow-2xl transition duration-300 border-t-4 border-blue-600">
+                    <svg class="icon-svg w-10 h-10 mb-4 text-blue-500" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M22 10s-2 1.5-2 4-2 4-2 4h-2"></path><path d="M2 14c0 2.5 1.5 4 4 4s4 1.5 4 4v-4"></path><path d="M12 22s-2 1.5-2 4-2 4-2 4v-4"></path><path d="M14 14v4"></path>
+                    </svg>
+                    <h3 class="text-xl font-bold mb-3 text-blue-800">3. Hábitos y Propósito</h3>
+                    <p class="text-gray-600">
+                        Traduce tu mentalidad renovada en <strong>una mejor forma de vivir</strong> al construir rutinas diarias que reflejen tus valores y te lleven a la plenitud.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCIÓN DE LLAMADA DE VALOR / ACCIÓN -->
+    <section class="py-20 sm:py-28 bg-blue-800 text-white">
+        <div class="max-w-4xl mx-auto px-6 text-center">
+            <h2 class="text-3xl sm:text-4xl font-extrabold mb-4 text-blue-200">¿Estás listo para invertir en tu paz mental?</h2>
+            <p class="text-xl mb-8 text-blue-300">
+                La transformación comienza con una sola decisión. El coaching es la guía, tú eres el motor.
+            </p>
+            <a href="#contacto" class="bg-white text-blue-800 px-10 py-4 text-xl rounded-xl shadow-2xl inline-block uppercase font-extrabold hover:bg-gray-200 transition duration-300">
+                Reserva mi Sesión de Claridad
+            </a>
+        </div>
+    </section>
+
+    <!-- SECCIÓN DE CONTACTO/FORMULARIO -->
+    <section id="contacto" class="py-16 sm:py-24 bg-white">
+        <div class="max-w-4xl mx-auto px-6 lg:px-8">
+            <h2 class="text-3xl sm:text-4xl font-bold text-center mb-12 text-gray-900">Tu Próximo Paso: Sesión de Diagnóstico Gratuita</h2>
+            <p class="text-center text-lg text-gray-600 mb-8">
+                Hablemos por 15 minutos. Sin compromiso, solo claridad y un plan de acción inicial para empezar a <strong>vivir mejor</strong>.
+            </p>
+
+            <div class="bg-gray-50 p-6 sm:p-10 rounded-2xl shadow-2xl">
+                <!-- Formulario de Contacto (simulado) -->
+                <form id="contact-form" class="space-y-6">
+                    <div>
+                        <label for="name" class="block text-sm font-medium text-gray-700">Nombre Completo</label>
+                        <input type="text" id="name" required class="mt-1 block w-full px-4 py-3 border border-gray-300 rounded-lg shadow-sm focus:ring-blue-600 focus:border-blue-600">
+                    </div>
+                    <div>
+                        <label for="email" class="block text-sm font-medium text-gray-700">Correo Electrónico</label>
+                        <input type="email" id="email" required class="mt-1 block w-full px-4 py-3 border border-gray-300 rounded-lg shadow-sm focus:ring-blue-600 focus:border-blue-600">
+                    </div>
+                    <div>
+                        <label for="message" class="block text-sm font-medium text-gray-700">¿Qué te detiene para <strong>mejorar tu forma de pensar y vivir</strong>?</label>
+                        <textarea id="message" rows="4" required class="mt-1 block w-full px-4 py-3 border border-gray-300 rounded-lg shadow-sm focus:ring-blue-600 focus:border-blue-600"></textarea>
+                    </div>
+                    
+                    <button type="submit" class="w-full btn-primary px-6 py-3 rounded-xl text-lg font-bold shadow-xl">
+                        Reservar mi Llamada de Claridad
+                    </button>
+                    
+                    <!-- Contenedor para mensajes de retroalimentación -->
+                    <div id="form-message" class="mt-4 p-4 rounded-lg text-center font-bold hidden"></div>
+                </form>
+
+                <hr class="my-8">
+
+                <!-- Aviso de Clarificación de Rol -->
+                <div class="text-center p-4 border border-blue-600 rounded-lg bg-blue-50">
+                    <p class="text-sm font-bold text-blue-800">
+                        NOTA DE CLARIFICACIÓN DE ROL:
+                    </p>
+                    <p class="text-xs mt-1 text-gray-600">
+                        Jonathan Riascos ofrece <strong>Coaching de Bienestar y Mentalidad</strong>. Este servicio NO es terapia psicológica, tratamiento médico o asesoría financiera certificada.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER/PIE DE PÁGINA -->
+    <footer class="bg-gray-900 text-white py-8">
+        <div class="max-w-7xl mx-auto px-6 text-center">
+            <p class="text-sm">
+                &copy; 2025 Jonathan Riascos Coaching. Todos los derechos reservados.
+            </p>
+            <p class="text-xs mt-2 text-gray-400">
+                Diseñando una vida con Propósito.
+            </p>
+        </div>
+    </footer>
+
+    <!-- LÓGICA JAVASCRIPT -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const form = document.getElementById('contact-form');
+            const formMessage = document.getElementById('form-message');
+
+            // Simulación del envío del formulario
+            form.addEventListener('submit', function(e) {
+                e.preventDefault(); 
+
+                formMessage.classList.remove('hidden');
+                formMessage.classList.remove('bg-red-900', 'text-red-300');
+                formMessage.classList.add('bg-blue-600', 'text-white'); 
+                formMessage.textContent = '¡Mensaje recibido! Jonathan te contactará en breve para coordinar tu Sesión de Claridad.';
+                
+                form.reset(); 
+                
+                document.getElementById('contacto').scrollIntoView({ behavior: 'smooth' });
+            });
+        });
+    </script>
+</body>
+</html>
